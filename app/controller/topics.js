@@ -40,11 +40,7 @@ class TopicController extends TopicsController {
         id: ctx.query.id,
       });
     } else {
-      ctx.body = {
-        status: 'error',
-        code: '200',
-        message: '缺少id',
-      };
+      ctx.throw(500, '缺少id');
     }
 
   }

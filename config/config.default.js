@@ -14,7 +14,7 @@ module.exports = appInfo => {
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1621315705794_7568';
-
+  config.middleware = [ 'errorHandler' ];
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
